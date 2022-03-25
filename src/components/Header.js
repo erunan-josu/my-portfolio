@@ -38,16 +38,36 @@ const Header = ({ activePath, seeMenuHandler, isMobile, seeMenu }) => {
             >
               <ul className="nav-container">
                 <li>
-                  <a href="#intro-section">{header.home}</a>
+                  <a
+                    href="#intro-section"
+                    onClick={isMobile ? () => seeMenuHandler() : ''}
+                  >
+                    {header.home}
+                  </a>
                 </li>
                 <li>
-                  <a href="#about-section">{header.about}</a>
+                  <a
+                    href="#about-section"
+                    onClick={isMobile ? () => seeMenuHandler() : ''}
+                  >
+                    {header.about}
+                  </a>
                 </li>
                 <li>
-                  <a href="#projects-section">{header.projects}</a>
+                  <a
+                    href="#projects-section"
+                    onClick={isMobile ? () => seeMenuHandler() : ''}
+                  >
+                    {header.projects}
+                  </a>
                 </li>
                 <li>
-                  <a href="#contact-section">{header.contact}</a>
+                  <a
+                    href="#contact-section"
+                    onClick={isMobile ? () => seeMenuHandler() : ''}
+                  >
+                    {header.contact}
+                  </a>
                 </li>
               </ul>
             </div>

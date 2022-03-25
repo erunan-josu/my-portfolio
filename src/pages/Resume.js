@@ -71,8 +71,8 @@ const Resume = () => {
           <div className="certificate-box">
             <h3>FreeCodeCamp</h3>
             <ul>
-              <li>Responsive Web Design</li>
-              <li>Javascript Algorithms and Data Structures</li>
+              <li>Responsive Web Design + {'(2020)'}</li>
+              <li>Javascript Algorithms and Data Structures + {'(2020)'}</li>
             </ul>
           </div>
           <div className="certificate-box">

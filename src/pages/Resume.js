@@ -78,21 +78,21 @@ const Resume = () => {
           <div className="certificate-box">
             <h3>The Odin Project</h3>
             <ul>
-              <li>Foundations</li>
-              <li>Javascript</li>
+              <li>Foundations + {'(2020)'}</li>
+              <li>Javascript + {'(2020)'}</li>
             </ul>
           </div>
           <div className="certificate-box">
             <h3>Udemy</h3>
             <ul>
-              <li>Javascript Moderno</li>
-              <li>Master en CSS: responsive, sass, flexbox...</li>
+              <li>Javascript Moderno + {'(2020)'}</li>
+              <li>Master en CSS: responsive, sass, flexbox... + {'(2020)'}</li>
             </ul>
           </div>
           <div className="certificate-box">
             <h3>DevelopedByEd</h3>
             <ul>
-              <li>The Creative React and Redux course</li>
+              <li>The Creative React and Redux course + {'(2021)'}</li>
             </ul>
           </div>
         </div>

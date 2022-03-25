@@ -62,8 +62,8 @@ export const Data = [
       button: 'resume',
     },
     about: {
-      p1: 'Traveling is one of my pasions and since I was a kid the other one has been manipulating cars, motorbikes and computers.',
-      p2: "Around one year ago I figured out I love developing webs. Since that day I've been working hard, taking curses and learning about it to offer to you an excellent service.",
+      p1: 'Traveling is one of my passions and since I was a kid the other one has been manipulating cars, motorbikes and computers.',
+      p2: "Around one year ago I figured out I love developing webs. I love the idea of create something from scratch and that is why I've been working hard, taking courses and learning about frontend to offer to you an excellent service.",
       text1: 'who',
       text2: 'am i',
     },
@@ -87,8 +87,8 @@ export const Data = [
       button: 'Home',
       high: 'High',
       native: 'Native',
-      p1: 'Soy un entusiasta del desarrollo web frontend con el objetivo de crear páginas web fáciles de usar, full responsive y animadas. Para ello cuento con un amplio conocimiento en HTML, CSS, Javascript y React.',
-      p2: 'Soy una persona que disfruta aprendiendo todos los dias, trabajando en equipo y muy comprometido con lo que hago.',
+      p1: 'I am loving web development and my goal is to create easy to use websites as well as animated full responsive websites. I have extensive knowledge in HTML, CSS, Javascript y React that I use for it.',
+      p2: 'I am a person who enjoys learning every day, working as a team and very committed to what I do.',
     },
   },
   {

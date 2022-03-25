@@ -1,0 +1,63 @@
+#about-section {
+  min-height: auto;
+  background: #fff;
+  .content-wrapper {
+    padding: 150px 0px;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 'descrip title' 'skills skills';
+
+    .description-container {
+      grid-area: descrip;
+      padding-right: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: bold;
+      p {
+        line-height: 150%;
+        padding: 5px 0px;
+      }
+    }
+    .skills-container {
+      grid-area: skills;
+      /* margin-top: 50px; */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  }
+  @media (max-width: 787px) {
+    .content-wrapper {
+      .skills-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    min-height: auto;
+    .content-wrapper {
+      padding: 50px 0px;
+      gap: 20px;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'title' 'descrip' 'skills';
+      .description-container {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .content-wrapper {
+      .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+.resume-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .content-wrapper {
+    padding: 120px 0px 50px 0px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80% 110px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 'main knowledge' 'certificates knowledge' 'lang knowledge' 'contact contact';
+    gap: 50px;
+    justify-content: space-between;
+    h2 {
+      text-transform: capitalize;
+    }
+    h1,
+    h2,
+    p {
+      padding: 5px 0px;
+    }
+
+    .main-info {
+      grid-area: main;
+    }
+
+    .knowledge {
+      grid-area: knowledge;
+      color: #404358;
+      border-radius: 20px;
+      ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border: 2px solid #3bc2fa;
+        border-radius: 10px;
+        font-size: 12px;
+
+        li {
+          height: auto;
+          padding-left: 10px;
+          width: 100%;
+        }
+      }
+    }
+
+    .languages {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+      }
+    }
+
+    .certificates {
+      grid-area: certificates;
+      .certificate-box {
+        width: 90%;
+        min-height: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #404358;
+        color: #edf1fd;
+        ul {
+          padding-left: 20px;
+          list-style: circle;
+        }
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .contact {
+      grid-area: contact;
+      .contact-ways-container {
+        display: flex;
+        justify-content: space-between;
+        .contact-way {
+          padding: 0px 20px;
+        }
+        .contact-icon {
+          padding: 0px 10px;
+        }
+        a {
+          font-weight: bold;
+          transition: all 300ms ease-in-out;
+          &:hover {
+            color: #3bc2fa;
+          }
+        }
+      }
+    }
+  }
+
+  .title {
+    padding: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+    border-bottom: 2px solid #3bc2fa;
+  }
+  @media (max-width: 872px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'main' 'knowledge' 'certificates' 'lang' 'contact';
+
+      .main-info  {
+        grid-area: main;
+      }
+      .knowledge {
+        grid-area: knowledge;
+        ul {
+          padding: 10px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .certificates {
+        grid-area: certificates;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .certificate-box {
+          width: 100%;
+        }
+      }
+      .languages {
+        grid-area: lang;
+      }
+      .contact {
+        grid-area: contact;
+      }
+    }
+  }
+  @media (max-width: 713px) {
+    .content-wrapper {
+      .contact {
+        .contact-ways-container {
+          row-gap: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 570px) {
+    .content-wrapper {
+      .knowledge {
+        grid-area: knowledge;
+        ul {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .languages {
+        ul {
+          flex-direction: column;
+          li {
+            text-align: center;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 366px) {
+    .content-wrapper {
+      .contact {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .content-wrapper {
+      .knowledge {
+        grid-area: knowledge;
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
